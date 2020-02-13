@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.stn.anonymoussns"
         minSdkVersion 17
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -32,4 +32,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    // RecyclerView 라이브러리
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
+    // CardView 라이브러리
+    implementation 'androidx.cardview:cardview:1.0.0'
+    // 디자인 라이브러리 - FloatingActionButton
+    implementation 'com.android.support:design:28.0.0'
+    // 이미지 로딩 라이브러리
+    api 'com.squareup.picasso:picasso:2.71828'
+    // 시간 관련 라이브러리
+    implementation 'net.danlew:android.joda:2.10.3'
 }
