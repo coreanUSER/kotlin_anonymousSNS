@@ -1,6 +1,6 @@
 package com.stn.anonymoussns
 
-class comment {
+class Comment {
     /**
      * 댓글의 아이디
      */
